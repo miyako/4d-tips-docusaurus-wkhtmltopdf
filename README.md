@@ -21,3 +21,8 @@
 ```
 
 が使われていない（**wkhtmltopdf**の[デフォルト](https://wkhtmltopdf.org/usage/wkhtmltopdf.txt)は`noPrintMediaType`）
+
+#### 回避策
+
+* `userStyleSheet`をフルパスで指定する
+* `noPrintMediaType`
