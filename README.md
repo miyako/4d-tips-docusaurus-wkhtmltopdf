@@ -6,11 +6,11 @@
 
 # Missing pages
 
-## 日本語
+### 日本語
 
 * propertiesForm
 
-## Français
+### Français
 
 * propertiesForm
 * dropdownListOverview
