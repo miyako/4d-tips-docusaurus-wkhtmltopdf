@@ -11,3 +11,13 @@
 ```
 
 が使用されていない
+
+そもそも
+
+```css
+@media print {
+
+}
+```
+
+が使われていない（**wkhtmltopdf**の[デフォルト](https://wkhtmltopdf.org/usage/wkhtmltopdf.txt)は`noPrintMediaType`）
