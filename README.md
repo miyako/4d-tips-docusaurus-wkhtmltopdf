@@ -25,7 +25,7 @@
 #### 回避策
 
 * `userStyleSheet`をフルパスで指定する
-* `noPrintMediaType`
+* `@media print {}`を外す
 * PdfGenerator.js
 
 ```js
