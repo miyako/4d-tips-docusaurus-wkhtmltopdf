@@ -4,6 +4,31 @@
 
 **参考**: [docusaurus-prince-pdf](https://github.com/miyako/4d-tips-docusaurus-prince-pdf)
 
+# Missing pages
+
+`variablename` is not a valid HTML tag.
+
+### 日本語
+
+* propertiesForm
+
+### Français (290)
+
+* propertiesForm
+* dropdownListOverview
+* FolderClass
+
+### Deutsch
+
+* propertiesForm
+* classes
+
+### Español (293)
+
+### English (293)
+
+---
+
 #### 問題点
 
 ```
@@ -26,13 +51,22 @@
 
 書き出しパスの中間フォルダーが存在しないとエラーになる（princeと同じ）
 
+JavaScriptが有効だと目次が崩れて大量のページが失われる
+
 #### 回避策
 
 * `userStyleSheet`をフルパスで指定する
 * `@media print {}`を外す
 * `externalLinks`を`false`にする
+* `javascriptDelay`を指定する
 * PdfGenerator.js
 
 ```js
-      wkhtmltopdf(url, {userStyleSheet:'/Users/miyako/.npm/_npx/c59504acf4d2eb99/node_modules/docusaurus-wkhtmltopdf/print.css', dpi:72, background:true, minimumFontSize:13, imageDpi:300, externalLinks:false, noPrintMediaType:null, copies:1, disableJavascript:null, orientation: 'landscape', marginTop: 0, marginRight: 0, marginBottom: 0, marginLeft: 0}).pipe(
+wkhtmltopdf(url, {userStyleSheet:'/Users/miyako/.npm/_npx/c59504acf4d2eb99/node_modules/docusaurus-wkhtmltopdf/print.css', dpi:72, background:true, minimumFontSize:13, imageDpi:300, externalLinks:false, noPrintMediaType:null, copies:1, disableJavascript:null, orientation: 'landscape', marginTop: 0, marginRight: 0, marginBottom: 0, marginLeft: 0})
 ```
+
+#### 結論
+
+この方法は使えない。
+
+---
