@@ -4,29 +4,6 @@
 
 **参考**: [docusaurus-prince-pdf](https://github.com/miyako/4d-tips-docusaurus-prince-pdf)
 
-# Missing pages
-
-`variablename` is not a valid HTML tag.
-
-### 日本語
-
-* propertiesForm
-
-### Français (290)
-
-* propertiesForm
-* dropdownListOverview
-* FolderClass
-
-### Deutsch
-
-* propertiesForm
-* classes
-
-### Español (293)
-
-### English (293)
-
 ---
 
 #### 問題点
@@ -67,6 +44,6 @@ wkhtmltopdf(url, {userStyleSheet:'/Users/miyako/.npm/_npx/c59504acf4d2eb99/node_
 
 #### 結論
 
-この方法は使えない。
+この方法は使えない。**wkhtmltopdf**を直接コールする。
 
 ---
