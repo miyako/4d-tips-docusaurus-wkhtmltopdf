@@ -6,6 +6,8 @@
 
 # Missing pages
 
+`variablename` is not a valid HTML tag.
+
 ### 日本語
 
 * propertiesForm
