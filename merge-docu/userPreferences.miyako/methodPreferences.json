@@ -1,23 +1,23 @@
 {
 	"Sources/Methods/TEST.4dm": {
-		"startSelection": 47,
-		"endSelection": 47,
-		"firstSelectedLine": 6,
-		"lastSelectedLine": 6,
+		"startSelection": 48,
+		"endSelection": 48,
+		"firstSelectedLine": 31,
+		"lastSelectedLine": 31,
 		"folding": [
-			37
+			51
 		],
 		"bookmarks": [],
-		"stamp": "2022-07-13T18:09:11.311Z"
+		"stamp": "2022-07-13T21:47:42.001Z"
 	},
 	"Sources/Methods/TEST1.4dm": {
-		"startSelection": 110,
-		"endSelection": 11,
-		"firstSelectedLine": 0,
-		"lastSelectedLine": 0,
+		"startSelection": 53,
+		"endSelection": 53,
+		"firstSelectedLine": 7,
+		"lastSelectedLine": 7,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2022-07-13T17:52:35.810Z"
+		"stamp": "2022-07-13T21:50:28.325Z"
 	},
 	"Sources/Methods/escape_u.4dm": {
 		"startSelection": 12,

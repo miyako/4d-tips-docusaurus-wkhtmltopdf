@@ -6,6 +6,6 @@ $command:="wkhtmltopdf --dpi 72 --image-dpi 300  --outline --user-style-sheet /U
 $PDF_folder:=Folder:C1567(fk desktop folder:K87:19).folder("PDF")
 $PDF_folder.create()
 
-$command:=" --minimum-font-size 18 --javascript-delay 3000 --print-media-type "+$PDF_folder.file("v19_R5-DE.pdf").path
+$command:=" --minimum-font-size 14 --javascript-delay 3000 --print-media-type "+$PDF_folder.file("v19_R5-ES.pdf").path
 
 SET TEXT TO PASTEBOARD:C523($command)

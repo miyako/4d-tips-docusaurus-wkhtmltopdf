@@ -5,14 +5,16 @@ $lines:=$file.getText("utf-8"; Document with CR:K24:21)
 
 $URLs:=New collection:C1472
 For each ($line; Split string:C1554($lines; "\r"; sk ignore empty strings:K86:1))
-	$line:=Replace string:C233($line; "/Rx/ja/"; "/Rx/ja/"; *)
+	$line:=Replace string:C233($line; "/Rx/ja/"; "/Rx/es/"; *)
 	$URLs.push($line)
 End for each 
 
-$HTML_folder:=Folder:C1567(fk desktop folder:K87:19).folder("HTML")
+$HTML_folder:=Folder:C1567(fk desktop folder:K87:19).folder("HTML-ES")
 $HTML_folder.create()
 
 For each ($URL; $URLs)
+	
+	//If ($URL="@propertiesForm@")
 	
 	$name:=Path to object:C1547(Split string:C1554($URL; "/").pop()).name
 	
@@ -23,12 +25,24 @@ For each ($URL; $URLs)
 	
 	If (HTTP Get:C1157($url; $data)=200)
 		
+		$html:=Convert to text:C1012($data; "utf-8")
+		$html:=Replace string:C233($html; "<VariableName>"; "&lt;VariableName&gt;")
+		$html:=Replace string:C233($html; "<FunctionName>"; "&lt;FunctionName&gt;")
+		$html:=Replace string:C233($html; "<Static List>"; "&lt;Static List&gt;")
+		$html:=Replace string:C233($html; "<username>"; "&lt;username&gt;")
+		$html:=Replace string:C233($html; "<none>"; "&lt;none&gt;")
+		
+		CONVERT FROM TEXT:C1011($html; "utf-8"; $data)
+		
 		$options:=New object:C1471("xhtmlOut"; True:C214)
 		$status:=Tidy($data; $options)
 		
 		If ($status.status=1)
 			
 			$html:=Replace string:C233($status.html; "&nbsp;"; "&#160;"; *)  //is this a Tidy bug?
+			$html:=Replace string:C233($html; "<?[TableName]FieldName?>"; "&lt;?[TableName]FieldName&gt;")
+			
+			SET TEXT TO PASTEBOARD:C523($html)
 			
 			$dom:=DOM Parse XML variable:C720($html)
 			XML SET OPTIONS:C1090($dom; XML indentation:K45:34; XML no indentation:K45:36)
@@ -147,4 +161,7 @@ For each ($URL; $URLs)
 		TRACE:C157
 		
 	End if 
+	
+	//End if 
+	
 End for each 
