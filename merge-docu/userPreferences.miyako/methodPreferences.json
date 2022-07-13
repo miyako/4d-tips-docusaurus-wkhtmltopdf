@@ -11,13 +11,13 @@
 		"stamp": "2022-07-13T21:47:42.001Z"
 	},
 	"Sources/Methods/TEST1.4dm": {
-		"startSelection": 53,
-		"endSelection": 53,
-		"firstSelectedLine": 7,
-		"lastSelectedLine": 7,
+		"startSelection": 32,
+		"endSelection": 32,
+		"firstSelectedLine": 9,
+		"lastSelectedLine": 9,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2022-07-13T21:50:28.325Z"
+		"stamp": "2022-07-13T22:04:03.004Z"
 	},
 	"Sources/Methods/escape_u.4dm": {
 		"startSelection": 12,
