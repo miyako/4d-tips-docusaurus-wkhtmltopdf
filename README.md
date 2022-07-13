@@ -24,6 +24,8 @@
 
 `externalLinks`が`true`だとエラーになる
 
+書き出しパスの中間フォルダーが存在しないとエラーになる（princeと同じ）
+
 #### 回避策
 
 * `userStyleSheet`をフルパスで指定する
