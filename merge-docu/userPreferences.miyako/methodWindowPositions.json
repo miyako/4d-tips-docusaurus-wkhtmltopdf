@@ -1,0 +1,32 @@
+{
+	"Sources/Methods/TEST.4dm": {
+		"left": 457,
+		"top": 209,
+		"width": 945,
+		"height": 859
+	},
+	"Sources/Methods/TEST1.4dm": {
+		"left": 428,
+		"top": 606,
+		"width": 945,
+		"height": 831
+	},
+	"Sources/Methods/escape_u.4dm": {
+		"left": 162,
+		"top": 230,
+		"width": 1129,
+		"height": 761
+	},
+	"Trash/Methods/(TEST 2).4dm": {
+		"left": 678,
+		"top": 167,
+		"width": 912,
+		"height": 734
+	},
+	"Trash/Methods/(TEST2).4dm": {
+		"left": 383,
+		"top": 192,
+		"width": 945,
+		"height": 859
+	}
+}
