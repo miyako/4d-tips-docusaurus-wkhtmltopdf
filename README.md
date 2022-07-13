@@ -26,11 +26,14 @@
 
 書き出しパスの中間フォルダーが存在しないとエラーになる（princeと同じ）
 
+JavaScriptのタイミング?
+
 #### 回避策
 
 * `userStyleSheet`をフルパスで指定する
 * `@media print {}`を外す
 * `externalLinks`を`false`にする
+* `javascriptDelay`を指定する
 * PdfGenerator.js
 
 ```js
