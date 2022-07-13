@@ -10,7 +10,7 @@
 
 * propertiesForm
 
-### Français
+### Français (290)
 
 * propertiesForm
 * dropdownListOverview
