@@ -21,6 +21,10 @@
 * propertiesForm
 * classes
 
+### Español
+
+* FolderClass
+
 ---
 
 #### 問題点
