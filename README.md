@@ -21,7 +21,9 @@
 * propertiesForm
 * classes
 
-### Español (304)
+### Español (293)
+
+### English (293)
 
 ---
 
