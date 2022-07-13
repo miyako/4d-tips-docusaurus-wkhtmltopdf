@@ -30,6 +30,13 @@
 
 JavaScriptが有効だと目次が崩れて大量のページが失われる
 
+`h1`で見出しが作成されない
+
+> Wkhtmltopdf with patched qt has support for PDF outlines also known as book
+  marks, this can be enabled by specifying the --outline switch. The outlines
+  are generated based on the <h?> tags, for a in-depth description of how this
+  is done see the Table Of Contents section.
+
 #### 回避策
 
 * `userStyleSheet`をフルパスで指定する
