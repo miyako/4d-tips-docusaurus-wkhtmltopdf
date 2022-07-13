@@ -30,7 +30,7 @@
 
 JavaScriptが有効だと目次が崩れて大量のページが失われる
 
-`h1`ではなく`h2`で見出しが作成される?
+`h1`で見出しが作成されない
 
 > Wkhtmltopdf with patched qt has support for PDF outlines also known as book
   marks, this can be enabled by specifying the --outline switch. The outlines
