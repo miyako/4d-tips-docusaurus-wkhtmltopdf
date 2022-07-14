@@ -1,3 +1,6 @@
+![version](https://img.shields.io/badge/version-19%2B-5682DF)
+![downloads](https://img.shields.io/github/downloads/miyako/4d-tips-docusaurus-wkhtmltopdf/total)
+
 # 4d-tips-docusaurus-wkhtmltopdf
 [docusaurus-wkhtmltopdf](https://nuxnik.com/docusaurus-pdf-generator/
 )を使用してPDFを作成するには
