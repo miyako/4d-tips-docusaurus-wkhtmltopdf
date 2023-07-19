@@ -5,11 +5,11 @@ $lines:=$file.getText("utf-8"; Document with CR:K24:21)
 
 $URLs:=New collection:C1472
 For each ($line; Split string:C1554($lines; "\r"; sk ignore empty strings:K86:1))
-	$line:=Replace string:C233($line; "/Rx/ja/"; "/Rx/es/"; *)
+	$line:=Replace string:C233($line; "/Rx/ja/"; "/Rx/fr/"; *)
 	$URLs.push($line)
 End for each 
 
-$HTML_folder:=Folder:C1567(fk desktop folder:K87:19).folder("HTML-ES")
+$HTML_folder:=Folder:C1567(fk desktop folder:K87:19).folder("HTML-FR")
 $HTML_folder.create()
 
 For each ($URL; $URLs)
@@ -42,7 +42,7 @@ For each ($URL; $URLs)
 			$html:=Replace string:C233($status.html; "&nbsp;"; "&#160;"; *)  //is this a Tidy bug?
 			$html:=Replace string:C233($html; "<?[TableName]FieldName?>"; "&lt;?[TableName]FieldName&gt;")
 			
-			SET TEXT TO PASTEBOARD:C523($html)
+			//SET TEXT TO PASTEBOARD($html)
 			
 			$dom:=DOM Parse XML variable:C720($html)
 			XML SET OPTIONS:C1090($dom; XML indentation:K45:34; XML no indentation:K45:36)
@@ -148,7 +148,7 @@ For each ($URL; $URLs)
 			$options:=New object:C1471("xhtmlOut"; True:C214)
 			$status:=Tidy($data; $options)
 			
-			$HTML_folder.file($name+".html").setText($status.html)
+			$HTML_folder.file($name+".html").setText(TEST_h1($status.html))
 			
 		Else 
 			
