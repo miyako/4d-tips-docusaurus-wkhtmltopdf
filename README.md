@@ -1,3 +1,6 @@
+![version](https://img.shields.io/badge/version-19%2B-5682DF)
+![downloads](https://img.shields.io/github/downloads/miyako/4d-tips-docusaurus-wkhtmltopdf/total)
+
 # 4d-tips-docusaurus-wkhtmltopdf
 [docusaurus-wkhtmltopdf](https://nuxnik.com/docusaurus-pdf-generator/
 )を使用してPDFを作成するには
@@ -30,7 +33,7 @@
 
 JavaScriptが有効だと目次が崩れて大量のページが失われる
 
-`h1`で見出しが作成されない
+`h1`で見出しが作成されない（`header`の中だから?）
 
 > Wkhtmltopdf with patched qt has support for PDF outlines also known as book
   marks, this can be enabled by specifying the --outline switch. The outlines
