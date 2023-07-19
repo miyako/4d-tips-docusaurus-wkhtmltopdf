@@ -1,22 +1,31 @@
 {
 	"methods": {
 		"encode": {
-			"timeStamp": "2022-07-13T07:40:32.435Z"
+			"timeStamp": "2022-07-13T07:40:32Z"
 		},
 		"TEST1": {
-			"timeStamp": "2022-07-13T22:04:03.004Z"
+			"timeStamp": "2023-07-19T12:14:57Z"
 		},
 		"TEST": {
-			"timeStamp": "2022-07-13T21:47:42.001Z"
+			"timeStamp": "2023-07-19T11:44:18Z"
 		},
 		"escape_u": {
-			"timeStamp": "2022-07-13T12:10:54.167Z"
+			"timeStamp": "2022-07-13T12:10:54Z"
+		},
+		"TEST_run": {
+			"timeStamp": "2023-07-19T11:48:59Z"
+		},
+		"TEST_h1": {
+			"timeStamp": "2022-07-14T01:07:49Z",
+			"attributes": {
+				"invisible": true
+			}
 		},
 		"(TEST2)": {
-			"timeStamp": "2022-07-13T15:18:09.573Z"
+			"timeStamp": "2022-07-13T15:18:09Z"
 		},
 		"(TEST 2)": {
-			"timeStamp": "2022-07-13T08:38:05.867Z"
+			"timeStamp": "2022-07-13T08:38:05Z"
 		}
 	}
 }

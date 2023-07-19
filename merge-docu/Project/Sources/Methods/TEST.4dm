@@ -1,15 +1,15 @@
 //%attributes = {}
-$file:=Folder:C1567(fk resources folder:K87:11).file("Rx_ja.txt")
+$file:=Folder:C1567(fk resources folder:K87:11).file("v20_ja.txt")
 
 $lines:=$file.getText("utf-8"; Document with CR:K24:21)
 
 $URLs:=New collection:C1472
 For each ($line; Split string:C1554($lines; "\r"; sk ignore empty strings:K86:1))
-	$line:=Replace string:C233($line; "/Rx/ja/"; "/Rx/fr/"; *)
+	//$line:=Replace string($line; "/Rx/ja/"; "/Rx/fr/"; *)
 	$URLs.push($line)
 End for each 
 
-$HTML_folder:=Folder:C1567(fk desktop folder:K87:19).folder("HTML-FR")
+$HTML_folder:=Folder:C1567(fk desktop folder:K87:19).folder("HTML-JA")
 $HTML_folder.create()
 
 For each ($URL; $URLs)
