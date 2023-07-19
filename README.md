@@ -63,3 +63,9 @@ wkhtmltopdf(url, {userStyleSheet:'/Users/miyako/.npm/_npx/c59504acf4d2eb99/node_
 ```
 ulimit -n 2048
 ```
+
+`top_.html` `atomic_.html`のエラーを無視する
+
+```
+--load-error-handling ignore
+```
