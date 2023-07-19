@@ -57,3 +57,9 @@ wkhtmltopdf(url, {userStyleSheet:'/Users/miyako/.npm/_npx/c59504acf4d2eb99/node_
 この方法は使えない。**wkhtmltopdf**を直接コールする。
 
 ---
+
+同時に開くことができるファイルの数はデフォルトで`256`なので
+
+```
+ulimit -n 2048
+```
