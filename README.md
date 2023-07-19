@@ -69,3 +69,9 @@ ulimit -n 2048
 ```
 --load-error-handling ignore
 ```
+
+```sh
+wkhtmltopdf --enable-local-file-access --load-error-handling ignore --minimum-font-size 18 --background --dpi 96 --image-dpi 300  --javascript-delay 15000 --outline --outline-depth 2 --print-media-type --user-style-sheet print.css 
+{URLs}
+{path_to_pdf}
+```
